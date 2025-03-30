@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+cl.run(host="0.0.0.0", port=8000)
+
 # 시스템 프롬프트 정의
 SYSTEM_PROMPTS = {
     "ox": (
