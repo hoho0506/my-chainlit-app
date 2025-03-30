@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("sk-TU_dMfWtAXvtuUBahV34pPczTC1Zd4B8DIaB3Qt33OT3BlbkFJ7Izx9J5YL0M_IXvLGbZk0pbFF5rrZBWTcTLYpY8-IA"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # 시스템 프롬프트 정의
 SYSTEM_PROMPTS = {
